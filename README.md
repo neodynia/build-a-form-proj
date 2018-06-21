@@ -10,7 +10,11 @@ Via Github pages
 [GitHub Pages](https://neodynia.github.io/build-a-form-proj)
 
 Via Codepen
+<<<<<<< HEAD
 [Codepen](https://codepen.io/ryanboris/pen/PaRejo)
+=======
+[Codepen](https://codepen.io/ryanboris/pen/PaRejo)
+>>>>>>> refs/remotes/origin/master
 
 ## Contact Information
 
