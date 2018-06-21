@@ -1,0 +1,42 @@
+.container {
+  display: grid; 
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+  justify-items: center;
+  background: linear-gradient(45deg, rgba(164, 131, 255, 0.5), rgba(239, 248, 116, 0.5));
+ 
+  
+}
+
+header {
+  grid-column: 1 / 2; 
+  grid-row: 1 / 2; 
+  text-align: center;
+}
+
+h1#title {
+  font-size: 3rem;
+  color: #000;
+}
+
+form {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 1rem;
+  align-items: center;
+  
+}
+
+label {
+  grid-column: 1 / 2;
+  margin: auto;
+  text-align: center;
+}
+
+input {
+  grid-column: 2 / 3; 
+  margin: auto;
+}
