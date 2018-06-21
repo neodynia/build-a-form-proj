@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +8,88 @@
   <title>Build a Form Site</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <div class="container">
-  <header>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Let us know how we can improve by completing this survey!</p>
-    <p id="required">* = required</p>
-  </header>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Let us know how we can improve by completing this survey!</p>
+      <p id="required">* = required</p>
+    </header>
 
-  <form id="survey-form">
-    
-    <label id="name-label" for="name">Full Name*</label>
-    <input type="text" id="name" placeholder="Enter your full name." name="name" required>
-    
-    <label id="email-label" for="email">Email*</label>
-    <input type="email" id="email" placeholder="Enter your email." name="email" required>
-    
-    <label id="number-label" for="number">Age*</label>
-    <input type="number" id="number" placeholder="Age" name="number" min="1" max="120" step="1" required>
-
-    <label id="dropdown-label" for="dropdown">Role*</label>
-    <select id="dropdown" name="currentPos">
-      <option disabled value>Select an option</option>
-      <option value="full-time">Full Time Worker</option>
-      <option value="student">Full Time Student</option>
-      <option value="part-time">Part Time Worker</option>
-      <option value="pt-student">Part Time Student</option>
-    </select>
-
-    <ul>
-    <li>
-    <label>JavaScript
-    <input type="radio" name="programming-language" value="JavaScript" checked>
-    </label>
-    <label>Ruby
-    <input type="radio" name="programming-language" value="Ruby" checked>
-    </label>
-    </li>
-    </ul>
-  </form>
+    <form id="survey-form" class="form">
+      <div id="namezone">
+      <label id="name-label" for="name" class="labels">Full Name*</label>
+      <input type="text" id="name" placeholder="Enter your full name." name="name" class="inputs" required>
+      </div>
+      <div id="emailzone">
+      <label id="email-label" for="email" class="labels">Email*</label>
+      <input type="email" id="email" placeholder="Enter your email." name="email" class="inputs" required> 
+      </div>
+      <div id="numberzone">
+      <label id="number-label" for="number" class="labels">Age*</label>
+      <input type="number" id="number" placeholder="Age" name="number" min="1" max="120" step="1" class="inputs" required>
+      </div>
+      <div id="dropdownzone">
+      <label id="dropdown-label" for="dropdown" class="labels">Role*</label>
+      <select id="dropdown" name="currentPos" class="inputs">
+        <option disabled value>Select an option</option>
+        <option value="full-time">Full Time Worker</option>
+        <option value="student">Full Time Student</option>
+        <option value="part-time">Part Time Worker</option>
+        <option value="pt-student">Part Time Student</option>
+      </select>
+      </div>
+      <div id="radio-items">
+        <p class="label-text">Select your favorite language:</p>
+        <div id="js">
+          <label class="labels" for="radio" id="radio-labels">JavaScript</label>
+          <input type="radio" name="programming-language" value="JavaScript" class="inputs" id="radio">
+        </div>
+        <div id="r">
+          <label class="labels" for="radio" id="radio-labels">Ruby</label>
+          <input type="radio" name="programming-language" value="Ruby" class="inputs" id="radio">
+        </div>
+        <div id="py">
+          <label class="labels" for="radio" id="radio-labels">Python</label>
+          <input type="radio" name="programming-language" value="python" class="inputs" id="radio">
+        </div>
+        <div id="h">
+          <label class="labels" for="radio" id="radio-labels">Haskell</label>
+          <input type="radio" name="programming-language" value="haskell" class="inputs" id="radio">
+        </div>
+      </div>
+      <div id="checkboxes">
+        <p id="check-text">Check your favorite fields:</p>
+        <div id="cysec">
+          <label class="labels" for="checkbox">Cybersecurity</label>
+          <input type="checkbox" name="checkbox" id="checkbox" value="cybersecurity">
+        </div>
+        <div id="it">
+          <label class="labels" for="checkbox">Instructional Technology</label>
+          <input type="checkbox" name="checkbox" id="checkbox" value="instructionaltech">
+        </div>
+        <div id="datasci">
+          <label class="labels" for="checkbox">Data Science</label>
+          <input type="checkbox" name="checkbox" id="checkbox" value="datascience">
+        </div>
+        <div id="fullstack">
+          <label class="labels" for="checkbox">Fullstack Development</label>
+          <input type="checkbox" name="checkbox" id="checkbox" value="fullstack">
+        </div>
+      </div>
+      <div id="textareazone">
+        <p id="comment-header">Comments/Questions/Concerns:</p>
+        <textarea name="comment" form="survey-form">Enter text here...</textarea>
+      </div>
+      <div id="submitform">
+        <input type="submit" id="submit">
+      </div>
+    </form>
   </div>
-  
+
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
