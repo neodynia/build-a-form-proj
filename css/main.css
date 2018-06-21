@@ -32,11 +32,14 @@ form {
 
 label {
   grid-column: 1 / 2;
-  margin: auto;
-  text-align: center;
 }
 
 input {
   grid-column: 2 / 3; 
-  margin: auto;
+  
 }
+
+ul {
+  list-style-type: none;
+}
+
